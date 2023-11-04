@@ -25,8 +25,8 @@ int generateRandomRange(int  max){
 void free_int_obj_used(int var){
 
     /*  
-        * The most advanced object on this list, chances are, this is poorly written, garbage code :( 
-        ! I would not recomend using this function until it has been properly tested and written out better.
+        ! THIS DOES NOT WORK! DO NOT TRY AND USE IT TO ANY EXTENT YOUR PROGRAM WILL BREAK
+        If any contributor wants to help and make this useable, that would be appreciated :)
     */
 
    if (var != var /*(potentially) uneeded panic condition*/) {
