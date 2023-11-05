@@ -20,19 +20,3 @@ int generateRandomRange(int  max){
 
     return rand() % max;
 }
-
-
-void free_int_obj_used(int var){
-
-    /*  
-        ! THIS DOES NOT WORK! DO NOT TRY AND USE IT TO ANY EXTENT YOUR PROGRAM WILL BREAK
-        If any contributor wants to help and make this useable, that would be appreciated :)
-    */
-
-   if (var != var /*(potentially) uneeded panic condition*/) {
-    exit(1);
-   }
-
-    free(&var);
-
-}
