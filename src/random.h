@@ -16,5 +16,3 @@ int generateRandomRange(int max);
 * I have no idea how well this is supposed to work(or going to rather)
 * I'd reccomend NOT USING THIS FUNCTION until the sources have been thouroughly cleaned up and fixed :)
 */
-
-void free_int_obj_used(int var);
