@@ -1,15 +1,22 @@
-# TODO: Write install and uninstall functions
+# TODO: Test if the functions actually work, implimenting the building of the examples
+
+.DEFAULT_GOAL := info
 
 
 
-build_examples:
-	@echo "Building example sources into output directory"
-	gcc src/usingTrueRand.c src/random.c -o output/exampleTrueRandProgram
-	gcc src/usingRandRange.c src/random.c -o output/exampleRandRangeProgram
-	@echo "compilation sucessful"
+install:
+	@echo "Checking if default install directory '/usr/local/include' exists"
+	if [-d "/usr/local/include"]; then
+		mv src/random.h /usr/local/include
+	fi
+	@echo "Sucessfully moved libarie's header file to target dir"
 
 
-clean_existing_builds:
-	@echo "Removing compiled binaries"
-	rm output/exampleTrueRandProgram output/exampleRandRangeProgram
-	@echo "sucessful"
+
+
+
+# This is the default make function 
+info: 
+	@echo "INSTALLATION: make install"
+	@echo "BUILD EXAMPLE SOURCES: make build_source_examples"
+	@echo "Version: 0.1.0"
