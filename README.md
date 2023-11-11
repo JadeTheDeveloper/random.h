@@ -25,7 +25,7 @@ This shortshands the code below
 ```
 Into a nice little statement that's easier on the eyes and dosen't clutter up your code. This is supposed to immitate python's random.randrange function.
 
-#Installation
+# Installation
 To install random.h run
 ```shell
     sudo make install
