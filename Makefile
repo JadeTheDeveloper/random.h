@@ -18,6 +18,7 @@ install:
 build_source_examples:
 	@echo "building sources."
 	gcc src/examples/truerand.c -o trueRandProgram
+	gcc src/examplesrandomrange.c -o randomRangeProgram
 	@echo "Success!"
 
 
