@@ -1,18 +1,25 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* * refer to random.c for the right way to define the functions below.
-   * I would not deviate from the thing explicitly stated there for simplicities sake.
-   * Just my opinion :p
-*/
 
 
-int generateTrueRand();
 
-int generateRandomRange(int max);
+int generateTrueRand(){
+    /* This function generates a "true" random, with the default RAND_MAX value*/
+    time_t t;
 
-/* 
-* This next function is an experimental version of a memory manager for any varibles in your script
-* I have no idea how well this is supposed to work(or going to rather)
-* I'd reccomend NOT USING THIS FUNCTION until the sources have been thouroughly cleaned up and fixed :)
-*/
+    srand((unsigned) time(&t));
+
+    return rand();
+}
+
+int generateRandomRange(int  max){
+    /* Does the same thing as generateTrueRand, but with a RAND_MAX that's set by the max varible*/
+    time_t t;
+    
+    // TODO: Add support for scanf integers so that the user wont have to cobble together a solution.
+
+    srand((unsigned) time(&t));
+
+    return rand() % max;
+}
