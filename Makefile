@@ -8,6 +8,10 @@ install:
 	@echo "Checking if default install directory '/usr/local/include' exists"
 	if [-d "/usr/local/include"]; then
 		mv src/random.h /usr/local/include
+	else
+		@echo "Directory Does not Exist: May prompt you for sudo password"
+		sudo mkdir /usr/local/include
+		mv src/random.h /usr/local/include
 	fi
 	@echo "Sucessfully moved libarie's header file to target dir"
 
