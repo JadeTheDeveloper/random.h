@@ -25,6 +25,18 @@ This shortshands the code below
 ```
 Into a nice little statement that's easier on the eyes and dosen't clutter up your code. This is supposed to immitate python's random.randrange function.
 
+#Installation
+To install random.h run
+```shell
+    sudo make install
+```
+Prerequisits:
+    have GCC installed
+    create the directory(if not already made) /usr/local/include
+    have make installed
+
+
+
 # DISCLAIMERS AND MISSING FUNCTIONALITY
 THIS IS IN NO WAY MENT TO BE USED WITH PRODUCTION CODE. Seriously, this has a lot of missing functionality that I need to add later. 
 This library with the way the makefile is going to be written, only works on Linux with the GCC(GNU Compiler Collection) using the /usr/local/include directory.

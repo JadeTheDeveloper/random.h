@@ -1,4 +1,4 @@
-# TODO: Test if the functions actually work, implimenting the building of the examples(In progress)
+# TODO: Fully debug the install features
 
 .DEFAULT_GOAL := info
 
@@ -6,13 +6,7 @@
 
 install:
 	@echo "Checking if default install directory '/usr/local/include' exists"
-	if [-d "/usr/local/include"]; then
 		mv src/random.h /usr/local/include
-	else
-		@echo "Directory Does not Exist: May prompt you for sudo password"
-		sudo mkdir /usr/local/include
-		mv src/random.h /usr/local/include
-	fi
 	@echo "Sucessfully moved libary's header file to target dir"
 
 build_source_examples:
