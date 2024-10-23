@@ -25,15 +25,26 @@ This shortshands the code below
 ```
 Into a nice little statement that's easier on the eyes and dosen't clutter up your code. This is supposed to immitate python's random.randrange function.
 
+# Example program
+Example Syntax
+```shell
+    ./exampleProgram [args]
+```
+There are currently only two accepted arguments for the example program
+* range: Runs code that demonstrates the library's generateRandomRange function
+* true: Runes code that demonstrates the generateTrueRand function in the library
+
+
+
 # Installation
 To install random.h run
 ```shell
     sudo make install
 ```
 Prerequisits:
-    have GCC installed
-    create the directory(if not already made) /usr/local/include
-    have make installed
+*   have GCC installed
+*    create the directory(if not already made) /usr/local/include
+*    have make installed
 
 
 

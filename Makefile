@@ -10,9 +10,8 @@ install:
 	@echo "Sucessfully moved libary's header file to target dir"
 
 build_source_examples:
-	@echo "building sources."
-	gcc src/examples/truerand.c -o trueRandProgram
-	gcc src/examples/randomrange.c -o randomRangeProgram
+	@echo "building examples."
+	gcc src/examples/examples.c -o exampleProgram
 	@echo "Success!"
 
 
