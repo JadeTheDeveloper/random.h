@@ -6,12 +6,12 @@
 
 install:
 	@echo "Checking if default install directory '/usr/local/include' exists"
-		mv src/random.h /usr/local/include
+	mv src/random.h /usr/local/include
 	@echo "Sucessfully moved libary's header file to target dir"
 
 build_source_examples:
 	@echo "building examples."
-	gcc src/examples/examples.c -o exampleProgram
+	gcc -I src/ src/examples/examples.c -o exampleProgram
 	@echo "Success!"
 
 
